@@ -1,0 +1,8 @@
+## Dolpin adds this on occasion so let's avoid committin it.
+.directory
+
+## They get too many too fast.
+node_modules
+
+## Misc (for now).
+*.log
