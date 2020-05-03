@@ -1,0 +1,33 @@
+title Part 0 exercise 4 - new note
+
+note over Browser:
+The browser sends the contents of the form
+to the server with an HTTP POST request.  
+end note
+Browser->Server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note
+note over Server:
+The server responds with HTTP status 302 and
+asks the browser to perform a GET request to
+https://fullstack-exampleapp.herokuapp.com/notes
+end note
+
+Server-->Browser: HTTP Status 302
+Browser->Server: HTTP GET https://fullstack-exampleapp.herokuapp.com/notes
+Server-->Browser: HTML Code
+Browser->Server: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.css
+Server-->Browser: main.css
+Browser->Server: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.js
+Server-->Browser: main.js
+
+note over Browser:
+executes the code in main.js which
+requests data.json from the server. 
+end note
+
+Browser->Server: HTTP GET https://fullstack-exampleapp.herokuapp.com/data.json
+Server-->Browser: [{ content: "HTML is easy", date: "2019-05-23" }, ...]
+
+note over Browser:
+browser executes the event handler
+that renders notes to display
+end note
