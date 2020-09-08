@@ -1,12 +1,4 @@
-## Dolpin adds this on occasion so let's avoid committin it.
-.directory
-
-## They get too many too fast.
-node_modules
-
-## Misc (for now).
-*.log
-yarn.lock
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
 /node_modules
